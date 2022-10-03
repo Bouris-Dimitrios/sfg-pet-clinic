@@ -12,25 +12,25 @@ public class PetServiceMap extends AbstractMapService<Pet,Long> implements PetSe
 
     @Override
     public Set<Pet> findAll() {
-        return null;
+        return super.findAll();
     }
 
     @Override
     public Pet findById(Long id) {
-        return null;
+        return super.findById(id);
     }
    @Override
     public Pet save(Pet object) {
-        return null;
+        return super.save(object);
     }
 
     @Override
     public void delete(Pet object) {
-
+        super.delete(object);
     }
 
     @Override
     public void deleteById(Long id) {
-
+        super.deleteById(id);
     }
 }
