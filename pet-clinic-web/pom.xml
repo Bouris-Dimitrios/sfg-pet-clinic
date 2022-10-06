@@ -139,6 +139,12 @@
                         <artifactId>bootstrap</artifactId>
                         <version>${webjars-bootstrap.version}</version>
                     </dependency>
+
+                    <dependency>
+                        <groupId>org.javassist</groupId>
+                        <artifactId>javassist</artifactId>
+                        <version>3.25.0-GA</version>
+                    </dependency>
                 </dependencies>
             </plugin>
             <plugin>
