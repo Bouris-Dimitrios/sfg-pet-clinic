@@ -8,25 +8,21 @@ import java.util.Set;
  * Created by jt on 7/13/18.
  */
 
-//@Entity
-//@Table(name="owners")
+@Entity
+@Table(name="owners")
 public class Owner extends Person {
 
-//    @Id
-//    @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private Long id;
-
-//    @Column(name = "address")
+    @Column
     private String address;
 
-//    @Column(name = "city")
+    @Column(name = "city")
     private String city;
 
-//    @Column(name = "telephone")
+    @Column
     private String telephone;
 
-//    @OneToMany(cascade = CascadeType.ALL, mappedBy = "owner")
-//    private Set<Pet> pets = new HashSet<>();
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "owner")
+    private Set<Pet> pets = new HashSet<>();
 
     public String getAddress() {
         return address;
@@ -53,13 +49,13 @@ public class Owner extends Person {
     }
     public Owner() {
     }
-//    public Set<Pet> getPets() {
-//        return pets;
-//    }
-//
-//    public void setPets(Set<Pet> pets) {
-//        this.pets = pets;
-//    }
+    public Set<Pet> getPets() {
+        return pets;
+    }
+
+    public void setPets(Set<Pet> pets) {
+        this.pets = pets;
+    }
 
 
     @Override
