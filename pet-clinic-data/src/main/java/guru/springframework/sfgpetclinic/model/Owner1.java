@@ -1,32 +1,39 @@
 package guru.springframework.sfgpetclinic.model;
 
 import javax.persistence.*;
-import java.util.HashSet;
-import java.util.Set;
 
 /**
  * Created by jt on 7/13/18.
  */
 
-//@Entity
+@Entity
 //@Table(name="owners")
-public class Owner extends Person {
+public class Owner1 {//} extends Person {
 
-//    @Id
-//    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long id;
 
-//    @Column(name = "address")
+    @Column(name = "address")
     private String address;
 
-//    @Column(name = "city")
+    @Column(name = "city")
     private String city;
 
-//    @Column(name = "telephone")
+    @Column(name = "telephone")
     private String telephone;
 
 //    @OneToMany(cascade = CascadeType.ALL, mappedBy = "owner")
 //    private Set<Pet> pets = new HashSet<>();
+
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getAddress() {
         return address;
@@ -51,7 +58,7 @@ public class Owner extends Person {
     public void setTelephone(String telephone) {
         this.telephone = telephone;
     }
-    public Owner() {
+    public Owner1() {
     }
 //    public Set<Pet> getPets() {
 //        return pets;
@@ -67,7 +74,7 @@ public class Owner extends Person {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Owner owner = (Owner) o;
+        Owner1 owner = (Owner1) o;
 
         if (address != null ? !address.equals(owner.address) : owner.address != null) return false;
         if (city != null ? !city.equals(owner.city) : owner.city != null) return false;
