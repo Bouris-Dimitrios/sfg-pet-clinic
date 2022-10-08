@@ -1,10 +1,10 @@
 package guru.springframework.sfgpetclinic.services.map;
-
 import guru.springframework.sfgpetclinic.model.Visit;
 import guru.springframework.sfgpetclinic.services.VisitService;
-
+import org.springframework.context.annotation.Profile;
 import java.util.Set;
 
+@Profile({"default","map"})
 public class VistiMapService extends AbstractMapService<Visit,Long> implements VisitService {
 
     @Override
