@@ -40,6 +40,11 @@
             <artifactId>javassist</artifactId>
             <version>3.29.2-GA</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

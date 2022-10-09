@@ -103,12 +103,9 @@
             <artifactId>javassist</artifactId>
             <version>3.29.2-GA</version>
         </dependency>
-
-        <!--        <dependency>-->
-<!--            <groupId>org.junit.platform</groupId>-->
-<!--            <artifactId>junit-platform-suite</artifactId>-->
-<!--            <version>${junit.platform.version}</version>-->
-<!--            <scope>test</scope>-->
+<!--        <dependency>-->
+<!--            <groupId>org.projectlombok</groupId>-->
+<!--            <artifactId>lombok</artifactId>-->
 <!--        </dependency>-->
         <dependency>
             <groupId>junit</groupId>
